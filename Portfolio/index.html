@@ -1,1 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boyana's Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
 
+
+    <header>
+        <div class="header">
+            <a href="#" class="logo">Boyana.</a>
+            <div class="group">
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact me</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" id="menuToggle"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="main">
+        <div class="maindiv">
+            <div class="left">
+                <h1>HELLO!</h1>
+                <p class="name">I AM <span>BOYANA</span><br>DIMITROVA</p>
+                <h2>frontend developer to be</h2>
+            </div>
+            <div class="right">
+                <img src="/images/boyana.png">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="about">
+        <div class="about">
+            <p>Know</p>
+            <h3>About Me</h3>
+            <h5>Technical support analyst with a passion to develop and learn skills in the field of Web
+                Development. I take time every day to practice HTML, CSS and JavaScript, I have recently
+                picked up React. I have so far completed a few personal projects and I believe my web skills
+                are on the level of Junior Developer. 
+                I am looking forward to land my first Junior role, so I can show my work ethic and further
+                develop my skills.</h5>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="skills">
+        <h3>Skills</h3>
+        <div class="wrap">
+            <div class="one">
+                <img src="/images/html.png">
+                <p>HTML 5</p>
+            </div>
+
+            <div class="one">
+                <img src="/images/css.png">
+                <p>CSS 3</p>
+            </div>
+
+            <div class="one">
+                <img src="/images/js_b.png">
+                <p>JavaScript</p>
+            </div>
+
+            <div class="one">
+                <img src="/images/react-removebg-preview.png">
+                <p>React</p>
+            </div>
+
+            <div class="one">
+                <img src="/images/git.png">
+                <p>Git</p>
+            </div>
+
+            <div class="one">
+                <img src="/images/figma-removebg-preview.png">
+                <p>Figma</p>
+            </div>
+
+            <div class="one">
+                <img src="/images/photoshop.png">
+                <p>Photoshop</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="portfolio">
+        <h3>My projects</h3>
+        <div class="projects">
+            <div class="project">
+                <a href="#"><img src="/images/Book_Store.PNG"></a>
+                <p>Online Book Store</p>
+            </div>
+
+            <div class="project">
+                <a href="#"><img src="/images/Digital_clock.jpg"></a>
+                <p>Real Time Clock<p>
+            </div>
+
+            <div class="project">
+                <a href="#"><img src="/images/Healthy_Eating.jpg"></a>
+                <p>Eating Healthy<p>
+            </div>
+
+            <div class="project">
+                <a href="#"><img src="/images/Coffee.PNG"></a>
+                <p>Coffee Shop<p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section id="contact">
+        
+        <div class="contactForm">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h2>Contact Me</h2>
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <span>Full Name</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="inputBox">
+                    <textarea required="required"></textarea>
+                    <span>Type your message...</span>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+
+        <div class="photo">
+            <p>Hello there! Feel free to contact me at any time. <br> I will get back to you within two bussiness days and <br> if it's urgent, my social handle would be better in situations like this.</p>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <div id="socials">
+        
+    </div>
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>
