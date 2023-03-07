@@ -41,10 +41,12 @@ nav ul{
     display: flex;
     gap: 1.5rem;
     padding-top: 23px;
+    font-size: 18px;
 }
 
 nav ul li a{
     text-decoration: none;
+    
 }
 
 nav ul li .bi{
@@ -65,6 +67,8 @@ header .content{
 .content .bg-img-3{
     background-image: url('/images/veterinary_8.png');
 }
+
+
 
 .content .carousel-image{
     height: 40vh;
@@ -92,20 +96,34 @@ header .content .cards .card{
     width: 15vw;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 10px;   
+    border-radius: 30px;   
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    }
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    
+}
+
+header .content .cards .card.card1::before,
+header .content .cards .card.card2::before,
+header .content .cards .card.card3::before{
+    content: " ";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: rgba(122, 121, 112, 0.555); 
+    border-radius: 30px
+}
 
 
 header .content .cards .card.card1{
     background-image: url('/images/card1.jpg');
+    position: relative;
      
 }
-
-
 
 header .content .cards .card.card2{
     background-image: url('/images/card2.jpg');
@@ -129,11 +147,14 @@ header .content .cards .card.card3{
 }
 
 .btn_card{
-    margin-top: 5px;
-    border:none;
+    margin-top: 8px;
+    border: 1px solid #fff;
+    color: #fff;
     font-size: 1.3vh;
-    padding: 3px 5px;
+    padding: 6px 10px;
     border-radius: 5px;
+    background: transparent;
+    outline: none;
 }
 
 .paragraph{
@@ -231,7 +252,7 @@ header .content .cards .card.card3{
 /* Info section */
 
 .info_section{
-    margin: 13vw 15vw 0 15vw;
+    margin: 7vw 15vw 0 15vw;
 
 }
 .info_section h3{
