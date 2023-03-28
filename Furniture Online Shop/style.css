@@ -9,6 +9,7 @@
     --text-color: rgb(69, 51, 27);
     --ascent-color: #adc178;
     --ascent2-color: #aec17862;
+    --gray-background: #e9ecef;
 }
 
 
@@ -141,7 +142,7 @@ a:hover{
 
 
 .main{
-    background-color: #e9ecef; 
+    background-color: var(--gray-background); 
     display: flex;  
     justify-content: center;
     align-items: center;
@@ -279,7 +280,7 @@ a:hover{
     grid-template-rows: min-content;
     gap: 1rem;
     padding: 1rem;
-    background: #e9ecef;
+    background: var(--gray-background);
     border-radius: 2rem;
 }
 
@@ -377,7 +378,7 @@ a:hover{
 
 .advertisment{
     margin-top: 14rem;
-    background-color: #e9ecef;
+    background-color: var(--gray-background);
     padding-top: 2em;
 }
 
@@ -406,6 +407,122 @@ a:hover{
     padding: 3px 3px 3px 15px;
     margin-right: 1rem;
 }
+
+
+
+/* PROJECTS SLIDER */
+.direction{
+    text-align: center;
+}
+.direction button{
+    font-family: cursive;
+    font-weight: bold;
+    background-color: #ffffff44;
+    border:none;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    transition: 0.5s;
+    margin:0 10px;
+}
+.direction button:hover{
+    background-color: #ffffff;
+}
+.item{
+    border-radius: 15px;
+    width:300px;
+    height:500px;
+    background-image: linear-gradient(to top, var(--gray-background), #b6b8ba);
+    overflow: hidden;
+    transition: 0.5s;
+    margin:10px;
+    scroll-snap-align: start;
+}
+
+.item a{
+    color: var(--text-color);
+}
+.item .avatar{
+    display: block;
+    margin:50px auto 10px;
+    width:230px;
+    height:150px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px #7e878d;
+}
+.item .content{
+    padding:30px;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#list{
+    display: flex;
+    width:max-content;
+}
+#formList{
+    width:1280px;
+    max-width: 100%;
+    overflow: auto;
+    margin:100px auto 0px;
+    scroll-behavior: smooth;
+    scroll-snap-type: both;
+}
+#formList::-webkit-scrollbar{
+    display: none;
+}
+
+#prev, #next{
+    font-size: 3rem;
+}
+
+
+
+/* SECTION INFORMATION */
+.information{
+    margin-top: 10rem;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    background-color: var(--gray-background);
+}
+
+.information h6{
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+.socials a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -473,76 +590,6 @@ a:hover{
 }
 
 
-/* PROJECTS SLIDER */
-.direction{
-    text-align: center;
-}
-.direction button{
-    font-family: cursive;
-    font-weight: bold;
-    background-color: #ffffff44;
-    border:none;
-    width:50px;
-    height:50px;
-    border-radius: 50%;
-    transition: 0.5s;
-    margin:0 10px;
-}
-.direction button:hover{
-    background-color: #ffffff;
-}
-.item{
-    border-radius: 15px;
-    width:300px;
-    height:500px;
-    background-image: linear-gradient(to top, var(--ascent-color), var(--ascent2-color));
-    overflow: hidden;
-    transition: 0.5s;
-    margin:10px;
-    scroll-snap-align: start;
-}
-
-.item a{
-    color: var(--text-color);
-}
-.item .avatar{
-    display: block;
-    margin:50px auto 10px;
-    width:230px;
-    height:150px;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 10px 15px #7e878d;
-}
-.item .content{
-    padding:30px;
-    font-family: monospace;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-#list{
-    display: flex;
-    width:max-content;
-}
-#formList{
-    width:1280px;
-    max-width: 100%;
-    overflow: auto;
-    margin:100px auto 0px;
-    scroll-behavior: smooth;
-    scroll-snap-type: both;
-}
-#formList::-webkit-scrollbar{
-    display: none;
-}
-
-#prev, #next{
-    font-size: 3rem;
-}
 
 @media screen and (max-width: 550px){
     .main{
